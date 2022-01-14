@@ -7,6 +7,7 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+/* common style */
 .btn {
   background-color: #ff008e;
   padding: 10px 15px;
@@ -22,7 +23,17 @@ body {
   background-color: transparent;
   color: white;
 }
-
+.section-title {
+  text-align: center;
+}
+.section-title h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  border-bottom: 3px solid #ff008e;
+  display: inline-block;
+  margin: 50px 0;
+}
+/* header section start */
 header {
   background-image: url(images/cloud.png);
   background-repeat: no-repeat;
@@ -36,6 +47,7 @@ header {
   margin: 0 auto;
   padding: 0 30px;
 }
+/* navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -59,6 +71,7 @@ nav {
 .navigation li a:hover {
   color: #ff008e;
 }
+/* banner */
 .banner {
   height: calc(100vh - 80px);
   display: grid;
@@ -86,4 +99,34 @@ nav {
 }
 .banner-right img {
   width: 100%;
+}
+/* feature section */
+.cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.card {
+  text-align: center;
+  width: 300px;
+  padding: 30px;
+  box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+.card i {
+  background-color: #ff008e;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card h1 {
+  margin-bottom: 1rem;
+}
+.card p {
+  margin-bottom: 1rem;
 }
